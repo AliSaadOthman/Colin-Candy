@@ -3,12 +3,8 @@ html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  background: rgb(187, 187, 165);
-  background: linear-gradient(
-    356deg,
-    rgba(187, 187, 165, 1) 26%,
-    rgba(238, 231, 224, 1) 83%
-  );
+  background: #f0f0f0;
+  font-family: Arial, sans-serif;
 }
 
 .navbar {

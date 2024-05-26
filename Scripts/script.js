@@ -66,6 +66,11 @@ $(document).ready(function () {
     $("#CopyrightText").text(translations[lang].CopyrightText);
     $("#SocialMediaCTA").text(translations[lang].SocialMediaCTA);
 
+    // Home Page
+    $("#HeroHeader").text(translations[lang].HeroHeader);
+    $("#HeroParagraph").text(translations[lang].HeroParagraph);
+    $("#ctabutton").text(translations[lang].ctabutton);
+
     // Team Page
     $("#teamMember1Name").text(translations[lang].teamMember1Name);
     $("#teamMember1Profession").text(translations[lang].teamMember1Profession);

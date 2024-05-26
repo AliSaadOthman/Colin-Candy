@@ -1,16 +1,98 @@
-body,
-html {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-  color: #6c757d;
-}
-
 section {
   padding: 60px 20px;
   min-height: 100vh;
   padding-top: 120px; /* Space for nav */
   overflow: hidden;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.col-sm-6 {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.hero-text {
+  padding: 20px;
+}
+
+#HeroHeader {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+  animation: fadeInUp 1s ease-out;
+}
+
+#HeroParagraph {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #555;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  animation: fadeInUp 2s ease-out;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+#HeroImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#HeroImage img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 #demo .carousel-item img {

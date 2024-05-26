@@ -8,6 +8,11 @@ const translations = {
     navTeamStaff: "Staff",
     navContact: "Contact",
     navCareers: "Careers",
+    HeroHeader:
+      "We strive to create prosperity for our customers, employees & community.",
+    HeroParagraph:
+      "Our mission is to shape the cities where we operate by building sustainable communities and creating a vibrant society.",
+    ctabutton: "Learn More",
     teamMember1Name: "Team Member 1 Name",
     teamMember1Profession: "Team Member 1 Position",
     teamMember2Name: "Team Member 2 Name",
@@ -28,6 +33,10 @@ const translations = {
     navTeamStaff: "طاقم العمل",
     navContact: "التواصل",
     navCareers: "الوظائف",
+    HeroHeader: "نحن نسعى جاهدين لخلق الرخاء لعملائنا وموظفينا ومجتمعنا.",
+    HeroParagraph:
+      "مهمتنا هي تشكيل المدن التي نعمل فيها من خلال بناء مجتمعات مستدامة وخلق مجتمع نابض بالحياة.",
+    ctabutton: "تعرف على المزيد",
     teamMember1Name: "اسم عضو الفريق 1",
     teamMember1Profession: "الدور المهني لعضو الفريق 1",
     teamMember2Name: "اسم عضو الفريق 2",
