@@ -1,0 +1,82 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 60px 20px;
+  min-height: 100vh;
+  padding-top: 120px; /* Space for nav */
+  overflow: hidden;
+}
+
+.card {
+  margin: 1rem;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #6c757d;
+}
+
+.card:hover {
+  background-color: #1466be;
+}
+
+.teammodal .modal-header {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding: 0;
+  border-bottom: none;
+  background-color: #f2f2f2;
+}
+
+.teammodal .modal-header #modal-close-btn {
+  font-size: xx-large;
+  font-weight: bolder;
+  border: none;
+  background: none;
+  padding-right: 1%;
+  color: #000000;
+}
+
+.teammodal .modal-body {
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+/* Modal Name */
+#modal-name {
+  color: #007bff; /* Blue color for the modal name */
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Modal Profession */
+#modal-profession {
+  color: #6c757d; /* Dark gray color for the modal profession */
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Modal Text */
+.teammodal .modal-body p {
+  color: #000000; /* Black color for the modal text */
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Modal Image */
+.modal-body img {
+  max-width: 100%; /* Ensure the image fits within its container */
+  height: auto; /* Maintain the aspect ratio of the image */
+  border-radius: 5px; /* Add a slight border-radius to the image */
+  margin-top: 20px; /* Add some space between the text and the image */
+}
+
+/* Override Bootstrap Modal Size */
+.teammodal .modal-dialog {
+  max-width: 800px; /* Adjust the maximum width of the modal */
+}

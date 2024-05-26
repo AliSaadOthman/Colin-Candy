@@ -1,0 +1,38 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  color: #6c757d;
+}
+
+section {
+  padding: 60px 20px;
+  min-height: 100vh;
+  padding-top: 120px; /* Space for nav */
+  overflow: hidden;
+}
+
+#demo .carousel-item img {
+  width: 100%; /* Set the width of the image to 100% */
+  height: auto; /* Let the browser calculate the height to maintain aspect ratio */
+  max-height: 80vh;
+  object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: none;
+  height: 10vh;
+  width: 5%;
+  text-align: center;
+  margin: auto;
+}
+
+.carousel-indicators {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: none;
+  width: 50%;
+  margin: auto;
+}

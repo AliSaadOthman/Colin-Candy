@@ -1,0 +1,153 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background: rgb(187, 187, 165);
+  background: linear-gradient(
+    356deg,
+    rgba(187, 187, 165, 1) 26%,
+    rgba(238, 231, 224, 1) 83%
+  );
+}
+
+.navbar {
+  padding: 0;
+  margin: 0;
+  background-color: #ebeae5;
+  height: auto;
+}
+
+footer {
+  display: flex;
+  padding: 1rem;
+  font-size: 1.2rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.navbar-brand {
+  display: flex; /* Sets the layout to Flexbox */
+  align-items: bottom; /* Centers items vertically */
+  width: 20%;
+}
+
+.navbar-brand img {
+  width: 70%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand img {
+    min-width: 150%;
+    height: auto;
+  }
+}
+
+.language-dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1vw;
+  height: auto;
+}
+
+#dropdownMenuButton {
+  border: none;
+  background: none; /* Transparent background */
+  color: #6c757d;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+html[dir="rtl"] .navbar-nav {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.nav-link {
+  color: #6c757d;
+  font-size: 1.6rem;
+  font-family: monospace;
+  font-weight: bold;
+  font-style: italic;
+  margin: 1rem;
+}
+.nav-link:hover {
+  color: #007bff;
+}
+
+/* Styling for the dropdown menu */
+.dropdown-menu {
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+}
+
+.dropdown-item {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* Modal Styles */
+.navbarmodal .modal-content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebeae5; /* Dark background */
+  color: #6c757d; /* White text color */
+}
+
+.navbarmodal .modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+  padding: 1rem;
+}
+
+.navbarmodal .modal-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center; /* Center align the list items */
+}
+
+.navbarmodal .modal-body ul li {
+  margin: auto;
+}
+
+.navbarmodal .modal-body ul li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.navbarmodal .modal-header {
+  display: flex;
+  width: 90%;
+  justify-content: flex-end;
+  border-bottom: none;
+}
+
+/* Custom dropdown menu alignment */
+.dropdown-menu[data-bs-popper] {
+  top: 80%;
+  left: auto;
+}
+
+body[lang="ar"] {
+  direction: rtl;
+  text-align: right;
+}
