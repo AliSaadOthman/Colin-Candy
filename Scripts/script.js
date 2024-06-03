@@ -1,9 +1,9 @@
 // script.js
 $(document).ready(function () {
   // Load the navbar
-  $("#navbar").load("./Components/navbar.html", checkLanguage);
+  $("#navbar").load("Components/navbar.html", checkLanguage);
   // Load the footer
-  $("#footer").load("./Components/footer.html", checkLanguage);
+  $("#footer").load("Components/footer.html", checkLanguage);
 
   $("#enButton").on("click", function () {
     setLanguage("en");
