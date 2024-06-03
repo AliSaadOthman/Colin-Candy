@@ -1,6 +1,6 @@
 # Description
 
-This repository contains an elegant prototype website developed using HTML/CSS, leveraging the Bootstrap CSS framework, and incorporating JQuery for dynamic DOM manipulations. The website is designed to be fully responsive, adapting seamlessly to various screen sizes, and offers the flexibility to switch between Arabic and English languages.
+This repository contains an elegant prototype website developed using HTML/CSS, leveraging the Bootstrap CSS framework, and incorporating JQuery for dynamic DOM manipulations. The website is designed to be fully responsive, adapting seamlessly to various screen sizes, and offers the flexibility to switch between Arabic and English languages. 
 
 ## Content
 ### Navigation Bar:
