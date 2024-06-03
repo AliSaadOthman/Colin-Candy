@@ -10,7 +10,7 @@ $(document).ready(function () {
   $(".card").click(function () {
     var name = $(this).find(".card-title").text();
     var profession = $(this).find(".card-subtitle").text();
-    $("#modal-container").load("./src/Components/teamModal.html", function () {
+    $("#modal-container").load("./Components/teamModal.html", function () {
       openModal(name, profession);
     });
   });
