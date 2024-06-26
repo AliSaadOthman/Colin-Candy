@@ -1,25 +1,54 @@
+@font-face {
+  font-family: "Co Headline";
+  src: url("../Fonts/Co Headline.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Co Headline";
+  src: url("../Fonts/Co Headline bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Co Headline";
+  src: url("../Fonts/Co Headline Light.otf") format("opentype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
 body,
 html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  background: #f0f0f0;
+  background: #fffffa;
   font-family: Arial, sans-serif;
 }
 
 .navbar {
   padding: 0;
   margin: 0;
-  background-color: #ebeae5;
+  background-color: #1c75bc;
   height: auto;
 }
 
 footer {
+  background-color: #1c75bc;
+  color: #fffffa;
   display: flex;
   padding: 1rem;
   font-size: 1.2rem;
   justify-content: center;
   text-align: center;
+  font-family: "Co Headline";
+  font-weight: normal;
+}
+
+.fa-brands {
+  color: #fffffa;
 }
 
 .navbar-brand {
@@ -40,58 +69,26 @@ footer {
   }
 }
 
-.language-dropdown {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 1vw;
-  height: auto;
-}
-
 #dropdownMenuButton {
   border: none;
   background: none; /* Transparent background */
-  color: #6c757d;
+  color: #fffffa;
 }
 
 .navbar-nav {
   margin-left: auto;
 }
 
-html[dir="rtl"] .navbar-nav {
-  margin-left: 0;
-  margin-right: auto;
-}
-
 .nav-link {
-  color: #6c757d;
+  color: #fffffa;
   font-size: 1.6rem;
-  font-family: monospace;
-  font-weight: bold;
+  font-family: "Co Headline";
+  font-weight: lighter;
   font-style: italic;
   margin: 1rem;
 }
 .nav-link:hover {
-  color: #007bff;
-}
-
-/* Styling for the dropdown menu */
-.dropdown-menu {
-  border: none;
-  border-radius: 0.25rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 0.5rem 0;
-}
-
-.dropdown-item {
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  display: block;
-  transition: background-color 0.3s ease;
-}
-
-.dropdown-item:hover {
-  background-color: #f8f9fa;
+  color: #de49ab;
 }
 
 /* Modal Styles */
@@ -100,15 +97,13 @@ html[dir="rtl"] .navbar-nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ebeae5; /* Dark background */
-  color: #6c757d; /* White text color */
+  background-color: #1c75bc; /* Dark background */
+  color: #fffffa; /* White text color */
 }
 
 .navbarmodal .modal-body {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-grow: 1;
   width: 100%;
   padding: 1rem;
 }
@@ -121,10 +116,6 @@ html[dir="rtl"] .navbar-nav {
   text-align: center; /* Center align the list items */
 }
 
-.navbarmodal .modal-body ul li {
-  margin: auto;
-}
-
 .navbarmodal .modal-body ul li a {
   font-size: 1.5rem;
   text-decoration: none;
@@ -135,15 +126,4 @@ html[dir="rtl"] .navbar-nav {
   width: 90%;
   justify-content: flex-end;
   border-bottom: none;
-}
-
-/* Custom dropdown menu alignment */
-.dropdown-menu[data-bs-popper] {
-  top: 80%;
-  left: auto;
-}
-
-body[lang="ar"] {
-  direction: rtl;
-  text-align: right;
 }

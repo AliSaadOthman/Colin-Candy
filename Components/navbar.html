@@ -2,22 +2,7 @@
 <nav class="navbar fixed-top navbar-expand-lg">
   <div class="container-fluid">
     <div class="navbar-brand" aria-label="Go to home page">
-      Logo PlaceHolder
-      <div class="dropdown language-dropdown">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="languageDropdownButton"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          English
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="languageDropdownButton">
-          <li><a class="dropdown-item" href="#" id="enButton">English</a></li>
-          <li><a class="dropdown-item" href="#" id="arButton">Arabic</a></li>
-        </ul>
-      </div>
+      <img class="w-50" src="Assets/NavbarLogo.png" alt="Colin Candy Logo" />
     </div>
     <button
       class="navbar-toggler"
@@ -37,32 +22,13 @@
           <a class="nav-link" href="index.html" id="navHome">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" id="navAbout">About</a>
+          <a class="nav-link" href="about.html" id="navAbout">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" id="navProjects">Projects</a>
+          <a class="nav-link" href="menu.html" id="navMenu">Menu</a>
         </li>
         <li class="nav-item">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="navTeam"
-            data-bs-toggle="dropdown"
-          >
-            Team
-          </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="team.html" id="navTeamBoard"
-              >Board Members</a
-            >
-            <a class="dropdown-item" href="#" id="navTeamStaff">Staff</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" id="navContact">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" id="navCareers">Careers</a>
+          <a class="nav-link" href="contact.html" id="navContact">Contact</a>
         </li>
       </ul>
     </div>
@@ -79,9 +45,10 @@
   <div class="modal-dialog modal-fullscreen navbarmodal">
     <div class="modal-content">
       <div class="modal-header">
+        <img class="w-50" src="Assets/NavbarLogo.png" alt="Colin Candy Logo" />
         <button
           type="button"
-          class="btn-close btn-close-black"
+          class="btn-close btn-close-white"
           data-bs-dismiss="modal"
           aria-label="Close"
         ></button>
@@ -92,61 +59,18 @@
             <a class="nav-link" href="index.html" id="navHomeModal">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" id="navAboutModal">About</a>
+            <a class="nav-link" href="about.html" id="navAboutModal">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" id="navProjectsModal">Projects</a>
+            <a class="nav-link" href="menu.html" id="navProjectsModal">Menu</a>
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="collapse"
-              href="#collapseExample"
-              role="button"
-              aria-expanded="false"
-              aria-controls="collapseExample"
-              id="navTeamModal"
+            <a class="nav-link" href="contact.html" id="navContactModal"
+              >Contact</a
             >
-              Team
-            </a>
-            <div class="collapse" id="collapseExample">
-              <a class="dropdown-item" href="team.html" id="navTeamBoardModal"
-                >Board Members</a
-              >
-              <a class="dropdown-item" href="#" id="navTeamStaffModal">Staff</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" id="navContactModal">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" id="navCareersModal">Careers</a>
           </li>
         </ul>
       </div>
     </div>
   </div>
 </div>
-
-<script>
-  $(document).ready(function () {
-    $("#enButton").on("click", function () {
-      setLanguage("en");
-    });
-
-    $("#arButton").on("click", function () {
-      setLanguage("ar");
-    });
-
-    function setLanguage(lang) {
-      // Update the selected language in local storage
-      Cookies.set("selectedLanguage", lang, { expires: 365 }); // Expires in 365 days
-
-      $("html").attr("lang", lang);
-
-      $("#languageDropdownButton").text(lang === "en" ? "English" : "Arabic");
-
-      location.reload();
-    }
-  });
-</script>

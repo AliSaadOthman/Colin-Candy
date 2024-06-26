@@ -8,22 +8,60 @@ html {
 section {
   padding: 60px 20px;
   min-height: 100vh;
-  padding-top: 120px; /* Space for nav */
+  padding-top: 120px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebebe8;
+  background-image: url("../Assets/BackgroundPattern.png");
+  background-size: cover; /* Adjust the size of the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center; /* Center the background image */
+}
+
+.menu-main {
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.colin-holding-menu-img {
+  width: 25%;
+  height: auto;
 }
 
 .card {
   margin: 1rem;
   cursor: pointer;
   background-color: #ffffff;
+  border: none;
   color: #000000;
-  border: 1px solid #6c757d;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+  transition: filter 0.3s ease;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  border-top: 1px solid black;
+  padding-top: 3%;
+}
+
+.card-img-view {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 35%;
+  top: 30%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .teammodal .modal-header {
@@ -81,4 +119,19 @@ section {
 /* Override Bootstrap Modal Size */
 .teammodal .modal-dialog {
   max-width: 800px; /* Adjust the maximum width of the modal */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 762px) {
+  .colin-holding-menu-img {
+    width: 50%;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .colin-holding-menu-img {
+    width: 80%;
+    height: auto;
+  }
 }

@@ -1,0 +1,38 @@
+.about-section {
+  min-height: 100vh;
+  font-family: "Co Headline";
+  color: white;
+}
+
+.about-section-1 {
+  margin-top: 5%;
+  background-color: #de49ab;
+}
+
+.about-section-1 h2 {
+  font-weight: bold;
+}
+
+.about-section-2 {
+  background-color: #1c75bc;
+}
+
+.about-section-2 h2 {
+  font-weight: bold;
+}
+
+.about-section-3 {
+  background-color: #de49ab;
+  overflow: hidden;
+}
+
+.about-section-3 h2 {
+  font-weight: bold;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 762px) {
+  .about-section-1 {
+    margin-top: 10%;
+  }
+}

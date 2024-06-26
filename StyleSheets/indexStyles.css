@@ -1,15 +1,21 @@
 section {
   padding: 60px 20px;
-  min-height: 100vh;
   padding-top: 120px; /* Space for nav */
   overflow: hidden;
 }
 
 #hero {
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #f0f0f0;
+  padding-top: 5%;
+  background-color: #1c75bc;
+}
+
+#home {
+  background-color: #fffffa;
 }
 
 .row {
@@ -31,34 +37,55 @@ section {
   padding: 20px;
 }
 
-#HeroHeader {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  color: #333;
-  animation: fadeInUp 1s ease-out;
+.scalable-section {
+  padding: 2rem; /* Use rem for scalable padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Center-align text */
+  position: absolute;
+  z-index: 2;
+  border-radius: 1rem;
+  animation: fadeInUp 1.5s ease-out;
 }
 
-#HeroParagraph {
-  font-size: 1.2em;
-  margin-bottom: 20px;
-  color: #555;
+.scalable-section img {
+  width: 40%;
+  padding-bottom: 2rem;
+  height: auto;
+  object-fit: cover;
+}
+
+#HeroImage {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   animation: fadeInUp 1.5s ease-out;
+}
+
+#HeroImage img {
+  border-radius: 5%;
+  width: 80%;
+  height: auto;
+  object-fit: cover;
 }
 
 .cta-button {
   display: inline-block;
   padding: 10px 20px;
-  font-size: 1em;
-  color: white;
-  background-color: #007bff;
-  border-radius: 5px;
+  font-size: 1.6rem;
+  color: #de49ab;
+  background-color: #fffffa;
+  border-radius: 50px;
   text-decoration: none;
+  text-align: center;
   transition: background-color 0.3s ease;
-  animation: fadeInUp 2s ease-out;
 }
 
 .cta-button:hover {
-  background-color: #0056b3;
+  box-shadow: 0 0 10px #000000;
+  animation: fadeInUp 0.3s forwards;
 }
 
 #HeroImage {
@@ -86,26 +113,35 @@ section {
 
 @keyframes fadeInUp {
   from {
-    opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(0);
   }
   to {
-    opacity: 1;
-    transform: translateY(0);
+    transform: translateY(-5px);
   }
 }
 
+/*Header*/
+.home-header {
+  font-family: "Co Headline";
+  font-weight: bold;
+  font-style: italic;
+  font-size: 3rem;
+  padding-bottom: 1%;
+  color: #de49ab;
+  text-decoration: underline;
+}
+
+/*Carousal*/
 #demo .carousel-item img {
   width: 100%; /* Set the width of the image to 100% */
   height: auto; /* Let the browser calculate the height to maintain aspect ratio */
   max-height: 80vh;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-  background-color: rgba(0, 0, 0, 0.5);
-  background-image: none;
+  color: white;
   height: 10vh;
   width: 5%;
   text-align: center;
@@ -113,8 +149,50 @@ section {
 }
 
 .carousel-indicators {
-  background-color: rgba(0, 0, 0, 0.5);
   background-image: none;
   width: 50%;
   margin: auto;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 762px) {
+  #hero {
+    min-height: 80%;
+    margin-top: 10%;
+  }
+
+  .home-header {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 992px) {
+  #hero {
+    flex-direction: column;
+  }
+
+  .scalable-section {
+    position: static;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .scalable-section img {
+    width: 100%;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+  }
+
+  #HeroImage img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .cta-button {
+    font-size: 1.3rem;
+  }
 }

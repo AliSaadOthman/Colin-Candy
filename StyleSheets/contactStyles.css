@@ -1,0 +1,27 @@
+.contact-section {
+  min-height: 84vh;
+  overflow: hidden;
+  font-family: "Co Headline";
+}
+
+.contact-section-headline {
+  color: #de49ab;
+  font-weight: bold;
+  padding: 5%;
+}
+
+/* Custom styles */
+.invalid-feedback {
+  display: none;
+}
+
+.is-invalid {
+  border-color: #dc3545;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 762px) {
+  .contact-section-headline {
+    margin-top: 13%;
+  }
+}
