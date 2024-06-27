@@ -128,7 +128,8 @@ section {
   font-size: 3rem;
   padding-bottom: 1%;
   color: #de49ab;
-  text-decoration: underline;
+  justify-content: center;
+  display: flex;
 }
 
 /*Carousal*/
