@@ -10,6 +10,7 @@
 }
 
 .about-section-1 h2 {
+  font-family: "Co Headline";
   font-weight: bold;
 }
 
@@ -18,6 +19,7 @@
 }
 
 .about-section-2 h2 {
+  font-family: "Co Headline";
   font-weight: bold;
 }
 
@@ -27,10 +29,6 @@
 }
 
 .about-section-3 h2 {
-  font-weight: bold;
-}
-
-.colin-about-header {
   font-family: "Co Headline";
   font-weight: bold;
 }
