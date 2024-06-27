@@ -30,6 +30,11 @@
   font-weight: bold;
 }
 
+.colin-about-header {
+  font-family: "Co Headline";
+  font-weight: bold;
+}
+
 /* Media queries for responsiveness */
 @media (max-width: 762px) {
   .about-section-1 {
