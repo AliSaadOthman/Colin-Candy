@@ -21,11 +21,6 @@ section {
   background-position: center; /* Center the background image */
 }
 
-.menu-main {
-  border: 1px solid black;
-  border-radius: 20px;
-}
-
 .colin-holding-menu-img {
   width: 25%;
   height: auto;

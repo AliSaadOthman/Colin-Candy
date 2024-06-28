@@ -16,6 +16,10 @@ section {
 
 #home {
   background-color: #fffffa;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .row {
@@ -128,8 +132,6 @@ section {
   font-size: 3rem;
   padding-bottom: 1%;
   color: #de49ab;
-  justify-content: center;
-  display: flex;
 }
 
 /*Carousal*/
@@ -137,7 +139,18 @@ section {
   width: 100%; /* Set the width of the image to 100% */
   height: auto; /* Let the browser calculate the height to maintain aspect ratio */
   max-height: 80vh;
-  object-fit: fill;
+  object-fit: cover;
+}
+
+.square-carousel {
+  width: 75%; /* Adjust the width as needed */
+  height: auto; /* Set the height to the same as the width to make it square */
+}
+
+.square-carousel .carousel-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure images cover the entire area of the carousel */
 }
 
 .carousel-control-prev,
@@ -167,6 +180,11 @@ section {
   }
 }
 @media (max-width: 992px) {
+  .square-carousel {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Set the height to the same as the width to make it square */
+  }
+
   #hero {
     flex-direction: column;
   }
